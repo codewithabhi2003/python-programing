@@ -1,0 +1,3 @@
+city = ["mumbai", "delhi", "pune", "gorakhpur", "ayodhya"]
+for i in range(len(city)):
+    print("I love", city[i])
