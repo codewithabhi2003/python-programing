@@ -1,0 +1,3 @@
+city=["mumbai","delhi","kolkata","chennai","bangalore"]
+for i in city:
+  print("i love",i)
