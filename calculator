@@ -1,0 +1,40 @@
+class Calc:
+    def __init__(self, a, b):
+        self.no1 = a
+        self.no2 = b
+
+    def add(self):
+        print("Sum =", self.no1 + self.no2)
+        
+    def sub(self):
+        print("Difference =", self.no1 - self.no2)
+        
+    def multiply(self):
+        print("Product =", self.no1 * self.no2)
+        
+    def divide(self):
+        if self.no2 != 0:
+            print("Quotient =", self.no1 / self.no2)
+        else:
+            print("Error: Division by zero")
+print("(1:add, 2:sub, 3:multiply, 4:divide) ")
+choice = int(input("Enter your choice:"))
+
+
+x = float(input("Enter number 1: "))
+y = float(input("Enter number 2: "))
+
+
+c1 = Calc(x, y)
+
+
+if choice == 1:
+    c1.add()
+elif choice == 2:
+    c1.sub()
+elif choice == 3:
+    c1.multiply()
+elif choice == 4:
+    c1.divide()
+else:
+    print("Invalid choice")
