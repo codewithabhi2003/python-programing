@@ -1,0 +1,35 @@
+class student:
+    collage="raheja collage"
+    course="BscIT"
+    def __init__(self,name,roll_no,marks):
+        self.name=name
+        self.roll_no=roll_no
+        self.marks=marks
+        
+    def avg(self):
+        sum=0
+        for val in self.marks:
+            sum += val
+        avrage = sum/len(self.marks)
+        print(f"hello {self.name} your avrage marks is {avrage:.2f}")
+    def show (self):
+        print ("name:",self.name)
+        print("roll number:",self.roll_no)
+        print("course:",student.course)
+        print("collage name:",student.collage)
+        
+
+s1=student('abhishek','21',[89,79,98])
+s2=student('chintu','24',[98,96,90])
+s3=student('boby','20',[92,88,87])
+s4=student('bunty','16',[96,89,86])
+s5=student('rahul','19',[88,87,89])
+
+students=(s1,s2,s3,s4,s5)
+
+
+for student in students:
+    student.show()
+    student.avg()
+   
+    print("------------")
